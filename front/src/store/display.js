@@ -7,19 +7,19 @@ const display = createSlice({
   initialState,
   reducers: {
     show(state, action) {
-      return state.filter(i => i !== action.payload);
+      return state.filter((i) => i !== action.payload);
     },
     hide(state, action) {
       return [...state, action.payload];
     },
     clear(state) {
-      console.log('clear')
+      console.log("clear");
       return [];
     },
   },
 });
 
-const isShown = (state) => (entityId) => !(state.display.includes(entityId));
+const isShown = (state) => (entityId) => !state.display.includes(entityId);
 
 const { show, hide, clear } = display.actions;
 

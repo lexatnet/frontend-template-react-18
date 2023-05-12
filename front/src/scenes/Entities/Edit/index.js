@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import EntityForm from "@root/components/EntityForm";
 import Layout from "@root/components/Layout";
 import { useParams } from "react-router-dom";
 import entitiesApi from "@root/store/entities";
 import { useNavigate } from "react-router-dom";
 
-export default function () {
+export default function Edit() {
   const navigate = useNavigate();
   const { entityId } = useParams();
 

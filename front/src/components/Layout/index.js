@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import MyAppBar from "@root/components/AppBar";
 import { useNavigate } from "react-router-dom";
 import { isAuthenticated } from "@root/store/auth";
@@ -12,7 +12,7 @@ export default function Layout({ children }) {
     if (!isAuth) {
       navigate("/login");
     }
-  }, [isAuth]);
+  }, [isAuth, navigate]);
 
   return (
     <>

@@ -33,7 +33,7 @@ export default function SignIn() {
     if (isAuth) {
       navigate("/entities");
     }
-  }, [isAuth]);
+  }, [isAuth, navigate]);
 
   return (
     <ThemeProvider theme={theme}>

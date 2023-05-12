@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 
-export default function ({ handleSubmit, entity = null }) {
+export default function EntityForm ({ handleSubmit, entity = null }) {
   const titleProps = {};
   const descriptionProps = {};
 

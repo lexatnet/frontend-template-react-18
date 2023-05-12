@@ -11,9 +11,6 @@ import { isAuthenticated, logout } from "@root/store/auth";
 import AppMenu from "@root/components/AppMenu";
 import { useNavigate } from "react-router-dom";
 
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-
 export default function MyAppBar() {
   const isAuth = useSelector(isAuthenticated);
   const dispatch = useDispatch();

@@ -2,7 +2,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useNavigate } from "react-router-dom";
 
-export default function ({ handleClose, anchorEl, open }) {
+export default function AppMenu ({ handleClose, anchorEl, open }) {
   const navigate = useNavigate();
 
   const createNav = (nav) => () => {

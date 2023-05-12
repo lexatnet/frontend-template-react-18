@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { createAction } from "@reduxjs/toolkit";
 
 const initialState = localStorage.getItem("user");
 
