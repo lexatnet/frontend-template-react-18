@@ -1,9 +1,10 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import omit from "lodash/fp/omit";
+import { apiUrl } from "@root/utils/fetch";
 
 const entitiesApi = createApi({
   reducerPath: "entitiesApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:8000/entities" }),
+  baseQuery: fetchBaseQuery({ baseUrl: apiUrl("entities").toString() }),
   endpoints: (builder) => ({
     list: builder.query({
       query: () => ({
